@@ -1,8 +1,7 @@
 steps:
   - name: python:3.9
-    entrypoint: "/bin/sh"
+    entrypoint: "bash"
     args:
-      - "-c"
       - "pip install --upgrade pip &&"
       - "pip install -r requirements.txt &&"
       - "pytest tests"

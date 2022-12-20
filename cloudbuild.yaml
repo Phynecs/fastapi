@@ -9,3 +9,7 @@ steps:
       - "-t"
       - "eu.gcr.io/$PROJECT_ID/fastapi/fastapi"
       - "."
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "push"
+      - "eu.gcr.io/$PROJECT_ID/fastapi/fastapi"

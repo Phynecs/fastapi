@@ -7,9 +7,9 @@ steps:
     args:
       - "build"
       - "-t"
-      - "eu.gcr.io/$PROJECT_ID/fastapi/fastapi"
+      - "europe-west6-docker.pkg.dev/$PROJECT_ID/fastapi/fastapi"
       - "."
   - name: "gcr.io/cloud-builders/docker"
     args:
       - "push"
-      - "eu.gcr.io/$PROJECT_ID/fastapi/fastapi"
+      - "europe-west6-docker.pkg.dev/$PROJECT_ID/fastapi/fastapi"

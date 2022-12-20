@@ -13,3 +13,11 @@ steps:
     args:
       - "push"
       - "europe-west6-docker.pkg.dev/$PROJECT_ID/fastapi/fastapi"
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "run"
+      - "deploy"
+      - "fastapi"
+      - "--image=europe-west6-docker.pkg.dev/$PROJECT_ID/fastapi/fastapi"
+      - "--region=europe-west6"
+      - "--allowed-unauthorized"

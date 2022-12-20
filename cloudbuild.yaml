@@ -20,4 +20,6 @@ steps:
       - "fastapi"
       - "--image=europe-west6-docker.pkg.dev/$PROJECT_ID/fastapi/fastapi"
       - "--region=europe-west6"
-      - "--allowed-unauthorized"
+      - "--allowed-unauthenticated"
+images:
+  - "europe-west6-docker.pkg.dev/$PROJECT_ID/fastapi/fastapi"
